@@ -1,24 +1,24 @@
 <header>
-    <div class="container">
-        <a routerLink="/" class="logo">Food Works!</a>
-        <nav>
-            <ul>
-                <li>
-                    <a routerLink="/login">Login</a>
-                </li>
-                <li class="menu-container">
-                    <a routerLink="/dashboard">Bheem</a>
-                    <div class="menu">
-                        <a routerLink="/profile">Profile</a>
-                        <a routerLink="/orders">Orders</a>
-                        <a>Logout</a>
-                    </div>
-                </li>
-                <li>
-                    <a routerLink="/cart-page">
-                        Cart <span>3</span> </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+  <div class="container">
+    <a routerLink="/" class="logo">Food Works!</a>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/login">Login</a>
+        </li>
+        <li class="menu-container">
+          <a routerLink="/dashboard">Bheem</a>
+          <div class="menu">
+            <a routerLink="/profile">Profile</a>
+            <a routerLink="/orders">Orders</a>
+            <a>Logout</a>
+          </div>
+        </li>
+        <li>
+          <a routerLink="/cart-page">
+            Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span> </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
