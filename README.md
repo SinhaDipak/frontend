@@ -1,6 +1,6 @@
 # Food-Order-Online
 
-##Snapshots 
+# Snapshots 
 
 ###Food Mine HomePage
 ![FoodMine HomePage](https://github.com/dipaksinha1/Food-Order-Online/blob/master/Snapshots/foodmine-homepage.png)
