@@ -2,10 +2,10 @@
 
 # Snapshots 
 
-###Food Mine HomePage
+## Food Mine HomePage
 ![FoodMine HomePage](https://github.com/dipaksinha1/Food-Order-Online/blob/master/Snapshots/foodmine-homepage.png)
 
-###Food Mine Product Page
+## Food Mine Product Page
 ![FoodMine ProductPage](https://github.com/dipaksinha1/Food-Order-Online/blob/master/Snapshots/foodmine-product-page.png)
 
 
