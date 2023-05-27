@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FoodService } from 'src/app/services/food.service';
 import { Tag } from 'src/app/shared/models/Tag';
@@ -10,8 +11,11 @@ import { Tag } from 'src/app/shared/models/Tag';
 export class TagsComponent implements OnInit {
   tags:Tag[]=[]
 
-  constructor(foodService:FoodService) { 
-    this.tags=foodService.getAllTags()
+  constructor(foodService:FoodService,private http:HttpClient) {
+
+    foodService.getAllTags().subscribe(serverTags => {
+      this.tags = serverTags;
+    });
   }
 
   ngOnInit(): void {

@@ -26,9 +26,13 @@ app.get("/api/foods/tags", (req, res) => {
 
 app.get("/api/foods/tag/:tagName", (req, res) => {
   const tagName = req.params.tagName;
-  const foods = sample_foods
-  .filter(food => food.tags?.includes(tagName));
-  res.send(foods);
+  const foods = sample_foods;
+
+  if (tagName === 'All')
+    return res.send(foods);
+
+  const filteredFoods = foods.filter(food => food.tags?.includes(tagName));
+  res.send(filteredFoods);
 })
 
 app.get("/api/foods/:foodId", (req, res) => {
